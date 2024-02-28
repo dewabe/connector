@@ -10,6 +10,8 @@ Data is loaded into a Pandas DataFrame for easy use.
 
 # Installation
 
+To install the latest version you can use pip as follows:
+
 ```sh
 pip install git+https://github.com/dewabe/connector.git
 ```
