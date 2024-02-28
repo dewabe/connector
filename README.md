@@ -10,7 +10,9 @@ Data is loaded into a Pandas DataFrame for easy use.
 
 # Installation
 
-To be done
+```sh
+pip install git+https://github.com/dewabe/connector.git
+```
 
 ## Usage
 
