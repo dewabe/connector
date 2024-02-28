@@ -1,18 +1,9 @@
-import sys
-import os
-
-# Add the parent directory to sys.path to find the connector module
-parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, parent_dir)
-
-from datetime import datetime
-from dateutil.relativedelta import relativedelta
+# In AutoConnector you need to specify only enviroiment variable file
 from connector import AutoConnector
 
-# Now you can use the imported entities as usual
+conn = AutoConnector(r'.env')
 
-conn = AutoConnector(r'..\.venv\.env')
-
+# Do the SQL query with parameters
 person = conn.execute_query(
     """
         SELECT
@@ -27,3 +18,6 @@ person = conn.execute_query(
     )
 )
 print(person)
+# Output
+#   person_name
+# 0 My Name
