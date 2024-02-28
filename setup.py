@@ -5,7 +5,7 @@ setup(
     version='0.1.0',
     author='Teemu Vartiainen',
     author_email='teemu@vartiainen.eu',
-    description='Database connector',
+    description='Data connector',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/dewabe/connector',
